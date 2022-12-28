@@ -41,6 +41,50 @@ body {
 	min-height: 100vh;
 	font-size: 14px;
 	font-family: "Inter", sans-serif;
+    background-color: var(--very-dark-blue);
+    color: var(--desaturated-blue);
+}
+
+h1 {
+    color: var(--white);
+}
+
+/*top section*/
+.top-card {
+    margin-bottom: 20px;
+    background-color: var(--dark-desaturated-blue);
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.sm-handle {
+    margin-left: 10px;
+}
+
+.icon-name {
+    margin-bottom: 20px;
+}
+
+.followers {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.new-followers {
+   font-weight: 700;
+}
+
+.stat-number-lg {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+/*bottom section*/
+.info-card {
+    background-color: var(--dark-desaturated-blue);
+    margin-bottom: 15px;
 }
 
 /*toggle switch*/
