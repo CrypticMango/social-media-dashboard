@@ -54,11 +54,11 @@ h2 {
 }
 
 .green {
-
+    color: var(--lime-green);
 }
 
 .red {
-    
+    color: var(--bright-red);
 }
 
 /*top section*/
