@@ -45,8 +45,20 @@ body {
     color: var(--desaturated-blue);
 }
 
-h1 {
+h1, h2 {
     color: var(--white);
+}
+
+h2 {
+    margin: 25px 0px;
+}
+
+.green {
+
+}
+
+.red {
+    
 }
 
 /*top section*/
@@ -85,6 +97,12 @@ h1 {
 .info-card {
     background-color: var(--dark-desaturated-blue);
     margin-bottom: 15px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.info-number {
+    font-size: 25px;
 }
 
 /*toggle switch*/
