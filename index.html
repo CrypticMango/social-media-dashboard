@@ -6,7 +6,6 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<!-- displays site properly based on user's device -->
 
 		<link
 			rel="icon"
@@ -26,11 +25,15 @@
 			rel="stylesheet"
 		/>
 
+    <script src="https://kit.fontawesome.com/b5252524d8.js" crossorigin="anonymous"></script>
+
 		<link rel="stylesheet" href="style.css" />
 
 		<title>Frontend Mentor | [Social Media Dashboard]</title>
 	</head>
 	<body>
+
+    
 		<main>
 			<h1>Social Media Dashboard</h1>
 			<h2>Total Followers: 23,004</h2>
@@ -47,7 +50,7 @@
 
 			<div class="top-card-container">
 
-				<div class="top-card">
+				<div class="top-card facebook">
 					<div class="icon-name">
             <span
               ><img
@@ -65,10 +68,10 @@
 							aria-label="up-arrow"
 						/>
 					</span>
-					<span class="new-followers"> 12 Today </span>
+					<span class="new-followers white"> 12 Today </span>
 				</div>
 
-				<div class="top-card">
+				<div class="top-card twitter">
 					<div class="icon-name">
             <span
               ><img
@@ -88,8 +91,8 @@
 					<span class="new-followers green">99 Today</span>
 				</div>
 
-				<div class="top-card">
-					<div class="top-card">
+				<div class="top-card instagram">
+					<div class="icon-name">
             <span
               ><img
                 src="/images/icon-instagram.svg"
@@ -108,7 +111,7 @@
 					<span class="new-followers green">1099 Today</span>
 				</div>
 
-				<div class="top-card">
+				<div class="top-card youtube">
 					<div class="icon-name">
             <span
               ><img
@@ -130,19 +133,24 @@
 			<h2>Overview - Today</h2>
 
 			<div class="info-card-container">
+
 				<div class="info-card">
-					<div>
-						<span class="overview-title"
-							>Page Views</span
-						>
-						<span
-							><img
-								src="/images/icon-facebook.svg"
-								alt="facebook"
-								aria-label="facebook-icon"
-						/></span>
+					<div class="title-container">
+						<div>
+              <span class="overview-title"
+                >Page Views</span
+              >
+            </div>
+						<div>
+              <span
+                ><img
+                  src="/images/icon-facebook.svg"
+                  alt="facebook"
+                  aria-label="facebook-icon"
+              /></span>
+            </div>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">87</span>
 						<span class="green"
 							><img
@@ -156,7 +164,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class= "title-container">
 						<span class="overview-title">Likes</span>
 						<span
 							><img
@@ -165,7 +173,7 @@
 								aria-label="facebook-icon"
 						/></span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">52</span>
 						<span class="red">
 							<img
@@ -179,7 +187,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class= "title-container">
 						<span class="overview-title"> Likes </span>
 						<span>
 							<img
@@ -189,7 +197,7 @@
 							/>
 						</span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">5462</span>
 						<span class="green">
 							<img
@@ -203,7 +211,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class="title-container">
 						<span class="overview-title"
 							>Profile Views</span
 						>
@@ -214,7 +222,7 @@
 								aria-label="instagram-icon"
 						/></span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">52k</span>
 						<span class="green">
 							<img
@@ -228,7 +236,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class="title-container">
 						<span class="overview-title">Retweets</span>
 						<span
 							><img
@@ -237,7 +245,7 @@
 								aria-label="twitter-icon"
 						/></span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">117</span>
 						<span class="green">
 							<img
@@ -251,7 +259,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class= "title-container">
 						<span class="overview-title">Likes</span
 						><span
 							><img
@@ -260,7 +268,7 @@
 								aria-label="twitter-icon"
 						/></span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">507</span>
 						<span class="green">
 							<img
@@ -274,7 +282,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class= "title-container">
 						<span class="overview-title">Likes</span>
 						<span
 							><img
@@ -283,7 +291,7 @@
 								aria-label="youtube-icon"
 						/></span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">107</span>
 						<span class="red">
 							<img
@@ -297,7 +305,7 @@
 				</div>
 
 				<div class="info-card">
-					<div>
+					<div class= "title-container">
 						<span class="overview-title"
 							>Total Views</span
 						>
@@ -308,7 +316,7 @@
 								aria-label="youtube-icon"
 						/></span>
 					</div>
-					<div>
+					<div class="number-and-percentage">
 						<span class="info-number">1407</span>
 						<span class="red">
 							<img
@@ -323,14 +331,18 @@
 			</div>
 		</main>
 
-		<div class="attribution">
-			Challenge by
-			<a
-				href="https://www.frontendmentor.io?ref=challenge"
-				target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+		<footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        > Coded by <a href="https://www.frontendmentor.io/profile/CrypticMango" target="_blank">Lisa</a>
+      </div>
+
+      <a href="https://github.com/CrypticMango" target="_blank" aria-label="github"><i class="fa-brands fa-github"></i></a>
+    </footer>
 		<script src="app.js"></script>
 	</body>
 </html>

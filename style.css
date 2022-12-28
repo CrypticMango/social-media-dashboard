@@ -9,7 +9,7 @@
 
 	--facebook: hsl(208, 89%, 53%);
 	--twitter: hsl(203, 89%, 53%);
-	--instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+	--instagram: hsl(37, 97%, 70%), hsl(329, 70%, 58%);
 	--youtube: hsl(348, 97%, 39%);
 
 	/*dark theme*/
@@ -45,12 +45,20 @@ body {
     color: var(--desaturated-blue);
 }
 
-h1, h2 {
+h1 {
     color: var(--white);
+    font-size: 25px;
 }
 
 h2 {
     margin: 25px 0px;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+hr {
+    margin-bottom: 20px;
+    border: 1px solid var(--dark-desaturated-blue);
 }
 
 .green {
@@ -61,12 +69,35 @@ h2 {
     color: var(--bright-red);
 }
 
+.white {
+    color: var(--white);
+}
+
 /*top section*/
 .top-card {
     margin-bottom: 20px;
     background-color: var(--dark-desaturated-blue);
     text-align: center;
     padding: 20px 0px;
+    border-radius: 7px;
+    width: 320px;
+}
+
+.facebook {
+    border-top: 4px solid var(--facebook);
+}
+
+.twitter {
+    border-top: 4px solid var(--twitter);
+}
+
+.instagram {
+    border-top: 4px solid;
+    border-color: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.youtube {
+    border-top: 4px solid var(--youtube);
 }
 
 .sm-handle {
@@ -98,11 +129,23 @@ h2 {
     background-color: var(--dark-desaturated-blue);
     margin-bottom: 15px;
     font-weight: 700;
-    padding: 20px;
+    padding: 25px;
+    border-radius: 7px;
 }
 
 .info-number {
-    font-size: 25px;
+    font-size: 30px;
+    color: white;
+}
+
+.title-container, .number-and-percentage {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title-container {
+    margin-bottom: 20px;
 }
 
 /*toggle switch*/
@@ -172,12 +215,24 @@ h2 {
 
   /*toggle switch end*/
 
+  /*footer*/
+
+  footer {
+   text-align: center;
+  }
+
 .attribution {
-	font-size: 11px;
+	font-size: 12px;
 	text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--twitter);
+}
+
+.fa-brands {
+    font-size: 30px;
+    margin: 30px;
+    color: var(--twitter);
 }
 
 @media (min-width: 1440px) {
