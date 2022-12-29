@@ -18,3 +18,5 @@ function toggleLight() {
 }
 
 //logic for toggle function. if toggle background is green-blue then gradient theme is dark. if toggle background is grey then theme is light.
+
+//figure out how to get background color value
