@@ -72,6 +72,15 @@ hr {
     margin-bottom: 50px;
 }
 
+/*light mode styling*/
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/*light mode styling end*/
+
 .green {
     color: var(--lime-green);
 }
