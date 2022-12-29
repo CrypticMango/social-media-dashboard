@@ -14,7 +14,7 @@
 
 	/*dark theme*/
 
-	--dark-toggle: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+	--dark-toggle: hsl(210, 78%, 56%), hsl(146, 68%, 55%);
 	--very-dark-blue: hsl(230, 17%, 14%); /*bg*/
 	--very-dark-blue-two: hsl(232, 19%, 15%); /*top bg pattern*/
 	--dark-desaturated-blue: hsl(228, 28%, 20%); /*card bg*/
@@ -51,14 +51,25 @@ h1 {
 }
 
 h2 {
-    margin: 25px 0px;
-    font-size: 15px;
-    margin-top: 0px;
+    margin: 40px 0px 25px 0px;
+    font-size: 24px;
 }
 
 hr {
     margin-bottom: 20px;
     border: 1px solid var(--dark-desaturated-blue);
+}
+
+.follower-total {
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.toggle-switch {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .green {
@@ -73,13 +84,13 @@ hr {
     color: var(--white);
 }
 
-/*top section*/
+/*top card section*/
 .top-card {
     margin-bottom: 20px;
     background-color: var(--dark-desaturated-blue);
     text-align: center;
     padding: 20px 0px;
-    border-radius: 7px;
+    border-radius: 4px;
     width: 320px;
 }
 
@@ -93,7 +104,7 @@ hr {
 
 .instagram {
     border-top: 4px solid;
-    border-color: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1 0 0 0;
 }
 
 .youtube {
@@ -102,9 +113,13 @@ hr {
 
 .sm-handle {
     margin-left: 10px;
+    font-size: 14px;
 }
 
 .icon-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -112,6 +127,7 @@ hr {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 15px;
+    font-size: 13px;
 }
 
 .new-followers {
@@ -125,6 +141,7 @@ hr {
 }
 
 /*bottom section*/
+
 .info-card {
     background-color: var(--dark-desaturated-blue);
     margin-bottom: 15px;
@@ -154,8 +171,8 @@ hr {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 25px;
   }
   
   /* Hide default HTML checkbox */
@@ -173,7 +190,7 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background: linear-gradient(#328ce7, #4FDE8D);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -181,19 +198,19 @@ hr {
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
+    height: 18px;
+    width: 18px;
+    left: 2px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--dark-desaturated-blue);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background: hsl(230, 22%, 74%);
   }
-  
+
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
@@ -202,6 +219,7 @@ hr {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+    background: white;
   }
   
   /* Rounded sliders */
@@ -222,6 +240,7 @@ hr {
   }
 
 .attribution {
+    margin-top: 30px;
 	font-size: 12px;
 	text-align: center;
 }
