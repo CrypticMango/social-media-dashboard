@@ -5,7 +5,7 @@ var bgColor = slider.getAttributeNames("background-color");
 const toggle = document.getElementById("toggle-switch");
 const body = document.body;
 
-//click body and switches theme
+//click body and theme switches
 
 body.addEventListener("click", toggleLight);
 
@@ -13,7 +13,7 @@ function toggleLight() {
 	body.classList.toggle("light-mode");
 }
 
-//use toggle switch and theme switches
+//use toggle switch
 
 toggle.addEventListener("input", (e) => {
 	const isChecked = e.target.checked;
