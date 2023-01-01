@@ -41,215 +41,226 @@ body {
 	min-height: 100vh;
 	font-size: 14px;
 	font-family: "Inter", sans-serif;
-    background-color: var(--very-dark-blue);
-    color: var(--desaturated-blue);
+	background-color: var(--very-dark-blue);
+	color: var(--desaturated-blue);
 }
 
 h1 {
-    color: var(--white);
-    font-size: 25px;
+	color: var(--white);
+	font-size: 25px;
 }
 
 h2 {
-    margin: 40px 0px 25px 0px;
-    font-size: 24px;
+	margin: 40px 0px 25px 0px;
+	font-size: 24px;
 }
 
 hr {
-    margin-bottom: 20px;
-    border: 1px solid var(--dark-desaturated-blue);
+	margin-bottom: 20px;
+	border: 1px solid var(--dark-desaturated-blue);
 }
 
 .follower-total {
-    margin: 0;
-    font-size: 15px;
-    margin-bottom: 20px;
+	margin: 0;
+	font-size: 15px;
+	margin-bottom: 20px;
 }
 
 .toggle-switch {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
-/*light mode styling*/
+/*theme styling*/
 
 .light-mode {
-    background-color: white;
-    color: black;
+	background-color: white;
+	color: black;
 }
 
-/*light mode styling end*/
+.dark-mode {
+	background-color: var(--very-dark-blue);
+	color: var(--desaturated-blue);
+}
+
+/*theme styling end*/
 
 .green {
-    color: var(--lime-green);
+	color: var(--lime-green);
 }
 
 .red {
-    color: var(--bright-red);
+	color: var(--bright-red);
 }
 
 .white {
-    color: var(--white);
+	color: var(--white);
 }
 
 /*top card section*/
 .top-card {
-    margin-bottom: 20px;
-    background-color: var(--dark-desaturated-blue);
-    text-align: center;
-    padding: 20px 0px;
-    border-radius: 4px;
-    width: 320px;
+	margin-bottom: 20px;
+	background-color: var(--dark-desaturated-blue);
+	text-align: center;
+	padding: 20px 0px;
+	border-radius: 4px;
+	width: 320px;
 }
 
 .facebook {
-    border-top: 4px solid var(--facebook);
+	border-top: 4px solid var(--facebook);
 }
 
 .twitter {
-    border-top: 4px solid var(--twitter);
+	border-top: 4px solid var(--twitter);
 }
 
 .instagram {
-    border-top: 4px solid;
-    border-image: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1 0 0 0;
+	border-top: 4px solid;
+	border-image: linear-gradient(
+			to right,
+			hsl(37, 97%, 70%),
+			hsl(329, 70%, 58%)
+		)
+		1 0 0 0;
 }
 
 .youtube {
-    border-top: 4px solid var(--youtube);
+	border-top: 4px solid var(--youtube);
 }
 
 .sm-handle {
-    margin-left: 10px;
-    font-size: 14px;
+	margin-left: 10px;
+	font-size: 14px;
 }
 
 .icon-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
 .followers {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
-    font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-bottom: 15px;
+	font-size: 13px;
 }
 
 .new-followers {
-   font-weight: 700;
+	font-weight: 700;
 }
 
 .stat-number-lg {
-    font-size: 50px;
-    font-weight: 700;
-    color: white;
+	font-size: 50px;
+	font-weight: 700;
+	color: white;
 }
 
 /*bottom section*/
 
 .info-card {
-    background-color: var(--dark-desaturated-blue);
-    margin-bottom: 15px;
-    font-weight: 700;
-    padding: 25px;
-    border-radius: 7px;
+	background-color: var(--dark-desaturated-blue);
+	margin-bottom: 15px;
+	font-weight: 700;
+	padding: 25px;
+	border-radius: 7px;
 }
 
 .info-number {
-    font-size: 30px;
-    color: white;
+	font-size: 30px;
+	color: white;
 }
 
-.title-container, .number-and-percentage {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.title-container,
+.number-and-percentage {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .title-container {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 /*toggle switch*/
 
 /* The switch - the box around the slider */
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 25px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(#328ce7, #4FDE8D);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 18px;
-    width: 18px;
-    left: 2px;
-    bottom: 4px;
-    background-color: var(--dark-desaturated-blue);
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background: hsl(230, 22%, 74%);
-  }
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+}
 
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-    background: white;
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
 
-  /*toggle switch end*/
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(#328ce7, #4fde8d);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
 
-  /*footer*/
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 2px;
+	bottom: 4px;
+	background-color: var(--dark-desaturated-blue);
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
 
-  footer {
-   text-align: center;
-  }
+input:checked + .slider {
+	background: hsl(230, 22%, 74%);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+	background: white;
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/*toggle switch end*/
+
+/*footer*/
+
+footer {
+	text-align: center;
+}
 
 .attribution {
-    margin-top: 30px;
+	margin-top: 30px;
 	font-size: 12px;
 	text-align: center;
 }
@@ -258,9 +269,9 @@ hr {
 }
 
 .fa-brands {
-    font-size: 30px;
-    margin: 30px;
-    color: var(--twitter);
+	font-size: 30px;
+	margin: 30px;
+	color: var(--twitter);
 }
 
 @media (min-width: 1440px) {
