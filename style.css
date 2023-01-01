@@ -66,6 +66,10 @@ hr {
 	margin-bottom: 20px;
 }
 
+.dm-label {
+    font-weight: 700;
+}
+
 .toggle-switch {
 	display: flex;
 	justify-content: space-between;
@@ -279,4 +283,12 @@ footer {
 		max-width: 1440px;
 		margin: 0 auto;
 	}
+
+    .top-card-container, .info-card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
 }
