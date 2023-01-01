@@ -48,6 +48,7 @@ body {
 h1 {
 	color: var(--white);
 	font-size: 25px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -284,11 +285,35 @@ footer {
 		margin: 0 auto;
 	}
 
+    hr {
+        display: none;
+    }
+
+    .top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .toggle-switch {
+        margin: 0;
+        align-items: center;
+    }
+
+    .dm-label {
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
     .top-card-container, .info-card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: space-between;
         grid-column-gap: 20px;
         grid-row-gap: 10px;
+    }
+
+    .top-card {
+        width: 250px;
     }
 }
