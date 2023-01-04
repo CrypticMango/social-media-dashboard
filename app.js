@@ -8,7 +8,10 @@ const topCard = document.querySelectorAll(".top-card");
 const statNumber = document.querySelectorAll(".stat-number-lg");
 const infoCard = document.querySelectorAll(".info-card");
 const infoNumber = document.querySelectorAll(".info-number");
-console.log(topCard)
+const line = document.getElementById("line");
+const dmLabel = document.getElementById("dm-label");
+
+console.log(line)
 
 
 toggle.addEventListener("input", (e) => {
@@ -21,6 +24,10 @@ toggle.addEventListener("input", (e) => {
 		h1.classList.add("title-light");
 
 		h2.classList.add("second-title-light");
+
+		dmLabel.classList.add("second-title-light");
+
+		line.classList.add("line-color-light");
 	
 		followTotal.classList.add("second-title-light");
 
@@ -41,6 +48,10 @@ toggle.addEventListener("input", (e) => {
 		h1.classList.remove("title-light");
 
 		h2.classList.remove("second-title-light");
+
+		dmLabel.classList.remove("second-title-light");
+
+		line.classList.remove("line-color-light");
 
 		followTotal.classList.remove("second-title-light");
 

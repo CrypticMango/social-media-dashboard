@@ -105,6 +105,10 @@ hr {
 	color: var(--dark-grayish-blue) !important;
 }
 
+.line-color-light {
+	border: 1px solid hsl(229, 30%, 72%);
+}
+
 /*card colors*/
 
 .card-light {
