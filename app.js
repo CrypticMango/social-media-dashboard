@@ -1,5 +1,15 @@
 const toggle = document.getElementById("toggle-switch");
 const body = document.body;
+const h1 = document.getElementById("dashboard");
+const h2 = document.getElementById("overview");
+const followTotal = document.getElementById("follower-total");
+const attribution = document.getElementById("attribution");
+const topCard = document.querySelectorAll(".top-card");
+const statNumber = document.querySelectorAll(".stat-number-lg");
+const infoCard = document.querySelectorAll(".info-card");
+const infoNumber = document.querySelectorAll(".info-number");
+console.log(topCard)
+
 
 toggle.addEventListener("input", (e) => {
    
@@ -7,9 +17,42 @@ toggle.addEventListener("input", (e) => {
 
 	if (isChecked) {
 		body.classList.add("light-mode");
-        body.classList.remove("dark-mode");
+		
+		h1.classList.add("title-light");
+
+		h2.classList.add("second-title-light");
+	
+		followTotal.classList.add("second-title-light");
+
+		attribution.classList.add("title-light");
+
+		topCard.forEach(card => card.classList.add ("card-light"));
+		
+		statNumber.forEach(number => number.classList.add("title-light"));
+
+		infoCard.forEach(card => card.classList.add("card-light"));
+
+		infoNumber.forEach(number => number.classList.add("title-light"));
+
 	} else {
-		body.classList.add("dark-mode");
+		
         body.classList.remove("light-mode");
+		
+		h1.classList.remove("title-light");
+
+		h2.classList.remove("second-title-light");
+
+		followTotal.classList.remove("second-title-light");
+
+		attribution.classList.remove("title-light");
+
+		topCard.forEach(card => card.classList.remove ("card-light"));
+
+		statNumber.forEach(number => number.classList.remove("title-light"));
+
+		infoCard.forEach(card => card.classList.remove("card-light"));
+
+		infoNumber.forEach(number => number.classList.remove("title-light"));
 	}
 });
+

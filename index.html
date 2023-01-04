@@ -37,8 +37,8 @@
 		<main>
 			<div class="top-bar">
 				<div>
-					<h1>Social Media Dashboard</h1>
-					<h2 class="follower-total">Total Followers: 23,004</h2>
+					<h1 id="dashboard">Social Media Dashboard</h1>
+					<h2 class="follower-total" id="follower-total">Total Followers: 23,004</h2>
 				</div>
 				<hr />
 				<div class="toggle-switch" >
@@ -52,7 +52,7 @@
 
 			<div class="top-card-container">
 
-				<div class="top-card facebook">
+				<div class="top-card facebook" id="top-card">
 					<div class="icon-name">
             <span
               ><img
@@ -61,7 +61,7 @@
                 aria-label="facebook-icon" /></span
             ><span class="sm-handle">@nathanf</span>
           </div>
-					<p class="stat-number-lg">1987</p>
+					<p class="stat-number-lg" id="stat-number-lg">1987</p>
 					<p class="followers">Followers</p>
 					<span>
 						<img
@@ -70,7 +70,7 @@
 							aria-label="up-arrow"
 						/>
 					</span>
-					<span class="new-followers white"> 12 Today </span>
+					<span class="new-followers green"> 12 Today </span>
 				</div>
 
 				<div class="top-card twitter">
@@ -132,7 +132,7 @@
 				</div>
 			</div>
 
-			<h2 class="white">Overview - Today</h2>
+			<h2 class="white" id="overview">Overview - Today</h2>
 
 			<div class="info-card-container">
 
@@ -334,7 +334,7 @@
 		</main>
 
 		<footer>
-      <div class="attribution">
+      <div class="attribution" id="attribution">
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"

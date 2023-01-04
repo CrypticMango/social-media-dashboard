@@ -89,6 +89,29 @@ hr {
 	color: var(--desaturated-blue);
 }
 
+/*h1 colors*/
+
+.title-light {
+	color: black !important;
+}
+
+.title-dark {
+	color: white;
+}
+
+/*h2 colors*/
+
+.second-title-light {
+	color: var(--dark-grayish-blue) !important;
+}
+
+/*card colors*/
+
+.card-light {
+	background-color: var(--light-grayish-blue) !important;
+	color: var(--dark-grayish-blue) !important; 
+}
+
 /*theme styling end*/
 
 .green {
@@ -138,6 +161,7 @@ hr {
 .sm-handle {
 	margin-left: 10px;
 	font-size: 14px;
+	font-weight: 700;
 }
 
 .icon-name {
