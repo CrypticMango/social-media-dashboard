@@ -112,6 +112,10 @@ hr {
 	color: var(--dark-grayish-blue) !important; 
 }
 
+.card-light:hover {
+	background-color: hsl(226, 22%, 53%);
+}
+
 /*theme styling end*/
 
 .green {
@@ -134,6 +138,11 @@ hr {
 	padding: 20px 0px;
 	border-radius: 4px;
 	width: 320px;
+}
+
+.top-card:hover {
+	cursor: pointer;
+	background-color:  hsl(230, 22%, 35%);
 }
 
 .facebook {
@@ -196,6 +205,11 @@ hr {
 	font-weight: 700;
 	padding: 25px;
 	border-radius: 7px;
+}
+
+.info-card:hover {
+	cursor: pointer;
+	background-color: hsl(230, 22%, 35%);
 }
 
 .info-number {
